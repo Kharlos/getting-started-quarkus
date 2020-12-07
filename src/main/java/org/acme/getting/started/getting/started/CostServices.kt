@@ -7,7 +7,7 @@ import javax.enterprise.context.ApplicationScoped
 class CostServices {
 
 
-    fun fetchCosts(){
+    fun fetchCosts(): ArrayList<Cost> {
         var costs = ArrayList<Cost>()
         costs.add(Cost("1", "Costo 1"))
         costs.add(Cost("2", "Costo 2"))
@@ -15,5 +15,6 @@ class CostServices {
         costs.add(Cost("4", "Costo 4"))
 
 
+        return costs
     }
 }
